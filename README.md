@@ -385,5 +385,7 @@ else:
 <p>En este ejemplo, se evalúa el valor de la variable "dia_de_la_semana" y se ejecuta el bloque de código correspondiente al caso específico. Si el valor es "lunes", "martes", "miércoles", "jueves" o "viernes", se imprimirá un mensaje indicando el número del día de la semana. Si el valor no coincide con ninguno de los casos anteriores, se ejecutará el bloque de código dentro del "else" y se imprimirá el mensaje "Es un día del fin de semana".
 Es importante tener en cuenta que en un condicional múltiple, una vez que se encuentra una condición verdadera y se ejecuta su bloque de código correspondiente, el resto de los bloques se omiten.</p>
 
-**EJERCICIOS Y DESAFIOS:** [**SEMANA 2 -Resultos paso a paso-**](https://github.com/MartinIsmaelSena/INFORMATORIO_2023/tree/master/RESOLUCIONSEMANA_1) 
+**EJERCICIOS Y DESAFIOS:** [**SEMANA 2 -Resultos paso a paso-**](https://github.com/MartinIsmaelSena/INFORMATORIO_2023/tree/master/RESOLUCIONSEMANA_2) 
 *by: Martin Ismael Sena*
+
+---
