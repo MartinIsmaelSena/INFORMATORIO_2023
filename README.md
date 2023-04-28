@@ -278,3 +278,112 @@ Es importante tener en cuenta la distinción entre datos mutables e inmutables, 
 ---
 
 <h1 align="center">Semana 2: Estructuras de Control de Flujo y Estructuras de datos</h1>
+
+<p>Las estructuras de control son fundamentales en la programación, ya que nos permiten tomar decisiones y ejecutar diferentes acciones en función de ciertas condiciones. Estas estructuras son herramientas poderosas que nos permiten crear programas más dinámicos e interactivos.</p>
+
+<h2>Condicionales</h2>
+
+<p>Eric Matthes resalta la importancia de entender y crear condiciones lógicas para que los condicionales funcionen correctamente. Explica cómo combinar operadores lógicos, como "and" (y), "or" (o) y "not" (no), para formar expresiones condicionales más complejas. Además, Matthes enfatiza la importancia de la indentación y el uso adecuado de los bloques de código dentro de las estructuras condicionales, lo que ayuda a mantener la legibilidad y comprensión del código.</p>
+
+* Condicionale simple: IF(SI)
+
+<p>Una estructura de control simple que podemos explorar, tomando como referencia a Eric Matthes, es la instrucción "if". Esta estructura permite ejecutar un bloque de código si una condición dada es verdadera. Eric Matthes, en su enfoque didáctico, ha explicado esta estructura de manera clara y accesible.
+La instrucción "if" se compone de la palabra clave "if", seguida de una expresión condicional entre paréntesis y un bloque de código que se ejecutará si la condición es verdadera. En caso de que la condición sea falsa, se puede proporcionar una cláusula "else" opcional con otro bloque de código a ejecutar.</p>
+
+<p>A continuación, te presento un ejemplo de estructura de control "if": </p>
+
+```
+edad = 17
+
+if edad >= 18:
+    print("Eres mayor de edad. Puedes ingresar al club.")
+else:
+    print("Eres menor de edad. No puedes ingresar al club.")
+
+```
+
+<p>En este ejemplo, se verifica si la variable "edad" es mayor o igual a 18. Si la condición es verdadera, se imprimirá el mensaje "Eres mayor de edad. Puedes ingresar al club." De lo contrario, si la condición es falsa, se imprimirá el mensaje "Eres menor de edad. No puedes ingresar al club."
+Eric Matthes también ha enfatizado la importancia de la indentación adecuada para delimitar los bloques de código dentro de las estructuras condicionales. En el ejemplo anterior, el bloque de código que se ejecuta en caso de que la condición sea verdadera está indentado con cuatro espacios o una tabulación. Esto asegura que el código se ejecute de manera apropiada y legible.</p>
+
+* Anidados
+
+<p>Una estructura de control que podemos explorar, tomando como referencia a Eric Matthes, es la anidación de instrucciones "if". Esta estructura nos permite evaluar múltiples condiciones y ejecutar bloques de código en función de ellas. Eric Matthes, reconocido autor y educador en programación, ha abordado este tema en sus obras de manera clara y accesible.
+La anidación de instrucciones "if" implica colocar una instrucción "if" dentro de otra instrucción "if", permitiendo una mayor flexibilidad en la toma de decisiones. Esto nos permite evaluar diferentes condiciones de manera secuencial y ejecutar diferentes bloques de código en función de esas condiciones.</p>
+
+<p>A continuación, te presento un ejemplo de estructura anidada de instrucciones "if":</p>
+
+```
+edad = 17
+altura = 150
+
+if edad >= 18:
+    if altura >= 160:
+        print("Eres mayor de edad y tienes la altura suficiente. Puedes ingresar al parque de atracciones.")
+    else:
+        print("Eres mayor de edad, pero no cumples con la altura mínima requerida.")
+else:
+    print("Eres menor de edad. No puedes ingresar al parque de atracciones.")
+
+```
+<p>En este ejemplo, se evalúan dos condiciones: la edad y la altura. Si la edad es mayor o igual a 18, se evalúa la siguiente condición: si la altura es mayor o igual a 160. Dependiendo del resultado de ambas condiciones, se ejecutarán diferentes bloques de código.
+Eric Matthes destaca la importancia de mantener una adecuada indentación para delimitar los bloques de código anidados. En el ejemplo anterior, los bloques de código anidados están indentados con una mayor cantidad de espacios para indicar su jerarquía dentro de la estructura anidada de instrucciones "if".</p>
+
+* Multiples condiciones IF()
+
+<p>La evaluación de múltiples condiciones en un "if" se puede lograr utilizando operadores lógicos, como "and" (y) y "or" (o), para combinar diferentes expresiones condicionales. Estos operadores permiten crear condiciones más complejas que deben cumplirse para que se ejecute un bloque de código.</p>
+
+<p>A continuación, te presento un ejemplo de evaluación de múltiples condiciones en un "if":</p>
+
+```
+edad = 25
+ciudad = "Nueva York"
+
+if edad >= 18 and ciudad == "Nueva York":
+    print("Eres mayor de edad y vives en Nueva York.")
+else:
+    print("No cumples con las condiciones necesarias.")
+
+```
+
+<p>En este ejemplo, se evalúan dos condiciones en la instrucción "if": si la edad es mayor o igual a 18 y si la ciudad es igual a "Nueva York". Ambas condiciones deben ser verdaderas para que se ejecute el bloque de código dentro del "if". En caso contrario, se ejecutará el bloque de código dentro del "else".
+Eric Matthes ha enfatizado la importancia de utilizar correctamente los operadores lógicos y mantener una buena estructura de código, incluyendo la indentación adecuada, para mejorar la legibilidad y comprensión del programa.
+Es importante tener en cuenta que se pueden evaluar múltiples condiciones en un "if" utilizando tanto el operador "and" como el operador "or", dependiendo de los requisitos específicos del programa.</p>
+
+* Condicional alternativo o doble: Sentencia else(sino)
+
+<p>La sentencia "else" se utiliza en conjunto con la instrucción "if" para ejecutar un bloque de código cuando la condición del "if" es falsa. Esto permite establecer una alternativa o ramificación en el flujo de ejecución del programa.</p>
+
+<p>Tomando como referencia el codigo anterior ↑</p>
+
+<p>En ese ejemplo, se evalúa si la variable "edad" es mayor o igual a 18. Si la condición es verdadera, se ejecuta el bloque de código dentro del "if" y se imprime el mensaje "Eres mayor de edad. Puedes ingresar al club.". Sin embargo, si la condición es falsa, se ejecuta el bloque de código dentro del "else" y se imprime el mensaje "Eres menor de edad. No puedes ingresar al club.".
+Es importante tener en cuenta que la sentencia "else" se ejecuta solo si la condición del "if" es falsa. En caso contrario, si la condición del "if" es verdadera, el bloque de código del "else" se omitirá.</p>
+
+* Condicional multiple: sentencia elif(sino si)
+
+<p>En muchos lenguajes de programación, como Python, se utiliza la instrucción "if-elif-else" para implementar un condicional múltiple. La instrucción "elif" es una combinación de las palabras "else" e "if", y se utiliza para evaluar condiciones adicionales después de un "if" inicial.</p>
+
+<p>A continuación, te presento un ejemplo de un condicional múltiple utilizando la instrucción "if-elif-else":</p>
+
+```
+dia_de_la_semana = "martes"
+
+if dia_de_la_semana == "lunes":
+    print("Es el primer día de la semana.")
+elif dia_de_la_semana == "martes":
+    print("Es el segundo día de la semana.")
+elif dia_de_la_semana == "miércoles":
+    print("Es el tercer día de la semana.")
+elif dia_de_la_semana == "jueves":
+    print("Es el cuarto día de la semana.")
+elif dia_de_la_semana == "viernes":
+    print("Es el quinto día de la semana.")
+else:
+    print("Es un día del fin de semana.")
+
+```
+
+<p>En este ejemplo, se evalúa el valor de la variable "dia_de_la_semana" y se ejecuta el bloque de código correspondiente al caso específico. Si el valor es "lunes", "martes", "miércoles", "jueves" o "viernes", se imprimirá un mensaje indicando el número del día de la semana. Si el valor no coincide con ninguno de los casos anteriores, se ejecutará el bloque de código dentro del "else" y se imprimirá el mensaje "Es un día del fin de semana".
+Es importante tener en cuenta que en un condicional múltiple, una vez que se encuentra una condición verdadera y se ejecuta su bloque de código correspondiente, el resto de los bloques se omiten.</p>
+
+**EJERCICIOS Y DESAFIOS:** [**SEMANA 2 -Resultos paso a paso-**](https://github.com/MartinIsmaelSena/INFORMATORIO_2023/tree/master/RESOLUCIONSEMANA_1) 
+*by: Martin Ismael Sena*
