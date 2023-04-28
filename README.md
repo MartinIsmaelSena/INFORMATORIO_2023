@@ -271,6 +271,10 @@ diccionario['c'] = 3   # Modifica el diccionario existente
 <p>En el ejemplo anterior, cuando modificamos los datos inmutables, como cambiar el valor de nombre o incrementar edad, se crean nuevos objetos en lugar de modificar los objetos originales. En cambio, cuando modificamos los datos mutables, como agregar un elemento a la lista lista o modificar un valor en el diccionario diccionario, el objeto existente se modifica directamente.
 Es importante tener en cuenta la distinción entre datos mutables e inmutables, ya que puede afectar el comportamiento de tu código y la forma en que manipulas y pasas datos entre variables y funciones.</p>
 
+**EJERCICIOS Y DESAFIOS:** [**SEMANA 1 -Resultos paso a paso-**](https://github.com/MartinIsmaelSena/INFORMATORIO_2023/tree/master/RESOLUCIONSEMANA_1) 
+*by: Martin Ismael Sena*
+
+
 ---
 
 <h1 align="center">Semana 2: Estructuras de Control de Flujo y Estructuras de datos</h1>
