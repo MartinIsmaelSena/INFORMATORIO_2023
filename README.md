@@ -385,7 +385,225 @@ else:
 <p>En este ejemplo, se evalúa el valor de la variable "dia_de_la_semana" y se ejecuta el bloque de código correspondiente al caso específico. Si el valor es "lunes", "martes", "miércoles", "jueves" o "viernes", se imprimirá un mensaje indicando el número del día de la semana. Si el valor no coincide con ninguno de los casos anteriores, se ejecutará el bloque de código dentro del "else" y se imprimirá el mensaje "Es un día del fin de semana".
 Es importante tener en cuenta que en un condicional múltiple, una vez que se encuentra una condición verdadera y se ejecuta su bloque de código correspondiente, el resto de los bloques se omiten.</p>
 
+<h2>Listas</h2>
+<p>En Python, una lista es una colección ordenada de elementos. Puedes almacenar diferentes tipos de datos en una lista, como números, cadenas de texto y objetos. Las listas se definen utilizando corchetes [] y los elementos se separan por comas.</p>
+<p>Por ejemplo, puedes crear una lista de números de la siguiente manera:</p>
+
+```
+numeros = [1, 2, 3, 4, 5]
+
+```
+<p>También puedes crear una lista de cadenas de texto:</p>
+
+```
+nombres = ['Juan', 'María', 'Carlos']
+
+```
+<p>Las listas son mutables, lo que significa que puedes modificar sus elementos. Puedes acceder a un elemento de la lista utilizando su índice, que comienza desde 0. Por ejemplo, para acceder al primer elemento de la lista "numeros", puedes utilizar numeros[0], y esto devolverá el valor 1.</p>
+<p>Puedes realizar varias operaciones con las listas, como agregar elementos, eliminar elementos, cambiar elementos existentes y obtener la longitud de la lista. Aquí tienes algunos ejemplos:</p>
+* Agregar elementos a una lista:
+
+```
+numeros.append(6)  # Agrega el número 6 al final de la lista
+nombres.insert(0, 'Luis')  # Agrega el nombre 'Luis' al inicio de la lista
+
+```
+
+* Eliminar elementos de una lista:
+
+```
+numeros.remove(3)  # Elimina el número 3 de la lista
+nombres.pop(1)  # Elimina el elemento en el índice 1 de la lista (en este caso, 'María')
+
+```
+
+* Cambiar elementos de una lista:
+
+```
+nombres[2] = 'Pedro'  # Cambia el tercer elemento de la lista por 'Pedro'
+
+```
+
+* Obtener la longitud de una lista:
+
+```
+longitud = len(numeros)  # Devuelve la cantidad de elementos en la lista
+
+```
+
+<h2>Tuplas</h2>
+
+<p>En Python, una tupla es una colección ordenada e inmutable de elementos. Se definen utilizando paréntesis () y los elementos se separan por comas.
+A diferencia de las listas, las tuplas no se pueden modificar después de su creación. Esto significa que no puedes agregar, eliminar o modificar elementos en una tupla una vez que se ha creado. Sin embargo, puedes acceder a los elementos de una tupla utilizando índices, de manera similar a como se hace con las listas.</p>
+
+<p>Aquí tienes un ejemplo de cómo se define una tupla en Python:</p>
+
+```
+tupla = (1, 2, 3, 4, 5)
+
+```
+<p>También puedes crear una tupla de diferentes tipos de elementos:</p>
+
+```
+tupla_mixta = (1, 'hola', 3.14, 'mundo')
+
+```
+<p>Puedes acceder a los elementos de una tupla utilizando su índice, de la misma forma que se hace con las listas:</p>
+
+```
+primer_elemento = tupla[0]  # Accede al primer elemento de la tupla (en este caso, 1)
+
+```
+<p>Una ventaja de las tuplas es que son más eficientes en términos de memoria y rendimiento en comparación con las listas. Si tienes una colección de elementos que no necesitan ser modificados, puedes utilizar tuplas en lugar de listas.</p>
+<p>Además, las tuplas se utilizan a menudo para empaquetar y desempaquetar valores. Por ejemplo:</p>
+
+```
+# Empaquetar valores en una tupla
+coordenadas = (10, 20)
+
+# Desempaquetar valores de una tupla
+x, y = coordenadas
+
+```
+<p>En este caso, la tupla coordenadas contiene dos valores: 10 y 20. Al desempaquetar la tupla en las variables <strong>x</strong> e <strong>y</strong>, cada variable toma el valor correspondiente de la tupla.</p>
+
+* Empaquetar y desempaquetar Tuplas
+
+<p>Empaquetar una tupla se refiere a crear una tupla con varios elementos en una sola variable. Por otro lado, desempaquetar una tupla implica asignar los valores de una tupla a varias variables individuales. Veamos ambos conceptos en detalle:</p>
+
+<p>Empaquetar una tupla:
+Empaquetar una tupla significa combinar varios elementos en una sola variable de tipo tupla. Puedes hacerlo simplemente asignando los valores separados por comas a una variable.</p>
+
+```
+# Empaquetar una tupla
+coordenadas = 10, 20
+
+```
+
+<p>En este ejemplo, los valores 10 y 20 se empaquetan en la tupla <strong>coordenadas</strong>.</p>
+
+<p>Desempaquetar una tupla:
+Desempaquetar una tupla implica asignar los valores de una tupla a variables individuales. Puedes hacerlo asignando los valores de la tupla a las variables separadas por comas.</p>
+
+
+```
+# Desempaquetar una tupla
+x, y = coordenadas
+
+```
+
+<p>En este caso, los valores de la tupla coordenadas se desempaquetan y se asignan a las variables <strong>x</strong> e <strong>y</strong> . Ahora <strong>y</strong> tendrá el valor 10 y y tendrá el valor 20.
+Además, puedes utilizar el operador asterisco (*) para desempaquetar los elementos restantes en una tupla.</p>
+
+```
+# Desempaquetar una tupla con el operador asterisco
+x, y, *restantes = 1, 2, 3, 4, 5
+
+```
+
+<p>En este ejemplo, los valores 3, 4 y 5 se desempaquetan en la lista <strong>restantes</strong>, mientras que <strong>x</strong> toma el valor 1 y y toma el valor 2.
+El empaquetado y desempaquetado de tuplas es una técnica muy útil en Python y se utiliza ampliamente para asignar y manipular varios valores en una sola instrucción</p>
+
+<h2>Diccionarios</h2>
+
+<p>En Python, un diccionario es una estructura de datos que almacena pares de clave-valor. A diferencia de las listas y las tuplas que se indexan por números, los diccionarios se indexan mediante claves, que pueden ser de diferentes tipos, como cadenas de texto, números o tuplas.</p>
+<p>Puedes crear un diccionario en Python utilizando llaves {} y especificando los pares clave-valor separados por comas. Por ejemplo:</p>
+
+```
+persona = {'nombre': 'Juan', 'edad': 25, 'ciudad': 'Madrid'}
+
+```
+
+<p>En este ejemplo, hemos creado un diccionario llamado persona con las claves 'nombre', 'edad' y 'ciudad', y los valores correspondientes 'Juan', 25 y 'Madrid'.</p>
+<p>Puedes acceder a los valores de un diccionario utilizando su clave:</p>
+
+```
+nombre = persona['nombre']  # Accede al valor asociado a la clave 'nombre' (en este caso, 'Juan')
+
+```
+
+<p>Además de acceder a los valores, también puedes modificarlos o añadir nuevos pares clave-valor al diccionario:</p>
+
+
+```
+persona['edad'] = 26  # Modifica el valor asociado a la clave 'edad' a 26
+persona['profesion'] = 'Ingeniero'  # Añade un nuevo par clave-valor al diccionario
+
+```
+
+<p>También puedes utilizar métodos y operaciones para trabajar con diccionarios. Algunas operaciones comunes incluyen:</p>
+
+* Obtener todas las claves de un diccionario:
+
+```
+claves = persona.keys()  # Devuelve una lista con todas las claves del diccionario
+
+```
+
+* Obtener todos los valores de un diccionario:
+
+```
+valores = persona.values()  # Devuelve una lista con todos los valores del diccionario
+
+```
+
+* Verificar si una clave existe en el diccionario:
+
+```
+existe = 'nombre' in persona  # Devuelve True si la clave 'nombre' existe en el diccionario
+
+
+```
+
+<h2>Sets</h2>
+
+<p>En Python, un conjunto (set) es una colección desordenada de elementos únicos. Los conjuntos se utilizan para almacenar múltiples elementos sin repetición. Puedes crear un conjunto utilizando llaves {} o la función set() y especificando los elementos separados por comas.</p>
+
+```
+frutas = {'manzana', 'naranja', 'plátano'}
+
+```
+<p>En este ejemplo, hemos creado un conjunto llamado frutas con los elementos 'manzana', 'naranja' y 'plátano'.
+Los conjuntos son útiles cuando necesitas almacenar elementos sin importar su orden y cuando quieres asegurarte de que no haya duplicados. Si intentas agregar un elemento duplicado a un conjunto, se ignorará.
+Puedes realizar diversas operaciones con conjuntos, como agregar elementos, eliminar elementos, realizar operaciones matemáticas de conjuntos y comprobar la pertenencia de un elemento. Aquí tienes algunos ejemplos:</p>
+
+* Agregar elementos a un conjunto:
+
+```
+frutas.add('piña')  # Agrega el elemento 'piña' al conjunto
+
+```
+
+* Eliminar elementos de un conjunto:
+
+```
+frutas.remove('manzana')  # Elimina el elemento 'manzana' del conjunto
+
+```
+
+* Realizar operaciones de conjuntos, como unión, intersección y diferencia:
+
+```
+otros_frutas = {'pera', 'manzana', 'mango'}
+
+union = frutas.union(otros_frutas)  # Realiza la unión de dos conjuntos
+interseccion = frutas.intersection(otros_frutas)  # Realiza la intersección de dos conjuntos
+diferencia = frutas.difference(otros_frutas)  # Obtiene la diferencia entre dos conjuntos
+
+
+```
+
+* Verificar la pertenencia de un elemento en un conjunto:
+
+```
+pertenece = 'naranja' in frutas  # Devuelve True si 'naranja' está en el conjunto
+
+```
+
+
 **EJERCICIOS Y DESAFIOS:** [**SEMANA 2 -Resultos paso a paso-**](https://github.com/MartinIsmaelSena/INFORMATORIO_2023/tree/master/RESOLUCIONSEMANA_2) 
 *by: Martin Ismael Sena*
 
 ---
+
+<h1 align="center">Semana 3: Estructuras de control de flujo loops</h1>
